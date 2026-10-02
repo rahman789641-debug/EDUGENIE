@@ -92,7 +92,14 @@ async function request<T>(
     }
 
     if (!response.ok) {
-      if (response.status === 404 && (!BASE_URL || (typeof window !== 'undefined' && window.location.hostname.includes('github.io')))) {
+      if (
+        (response.status === 404 || response.status === 405) &&
+        (!BASE_URL ||
+          (typeof window !== 'undefined' &&
+            (window.location.hostname.includes('vercel.app') ||
+              window.location.hostname.includes('github.io') ||
+              window.location.hostname === 'localhost')))
+      ) {
         try {
           const bodyPayload = options.body ? JSON.parse(options.body as string) : undefined
           return await handleBrowserAiFallback<T>(endpoint, bodyPayload)
@@ -138,7 +145,13 @@ async function request<T>(
 
     return (await response.json()) as T
   } catch (err: unknown) {
-    if (!BASE_URL || (typeof window !== 'undefined' && window.location.hostname.includes('github.io'))) {
+    if (
+      !BASE_URL ||
+      (typeof window !== 'undefined' &&
+        (window.location.hostname.includes('vercel.app') ||
+          window.location.hostname.includes('github.io') ||
+          window.location.hostname === 'localhost'))
+    ) {
       try {
         const bodyPayload = options.body ? JSON.parse(options.body as string) : undefined
         return await handleBrowserAiFallback<T>(endpoint, bodyPayload)
