@@ -1,0 +1,137 @@
+[
+  {
+    "test_name": "Photosynthesis",
+    "difficulty": "beginner",
+    "title": "Photosynthesis Basics Quiz",
+    "questions": [
+      {
+        "id": "q1",
+        "question": "What is the primary purpose of photosynthesis in green plants?",
+        "options": [
+          "To break down glucose into water and carbon dioxide",
+          "To transform light energy into chemical energy",
+          "To absorb oxygen and release minerals",
+          "To produce chlorophyll within the cell walls"
+        ],
+        "correct_answer": "To transform light energy into chemical energy",
+        "explanation": "Photosynthesis is defined as the process of converting light energy into chemical energy stored in organic compounds like glucose."
+      },
+      {
+        "id": "q2",
+        "question": "In which cellular organelle does photosynthesis take place?",
+        "options": [
+          "Mitochondria",
+          "Nucleus",
+          "Chloroplasts",
+          "Ribosomes"
+        ],
+        "correct_answer": "Chloroplasts",
+        "explanation": "The passage explicitly states that photosynthesis reactions occur within specialized organelles called chloroplasts."
+      },
+      {
+        "id": "q3",
+        "question": "Which substance is produced as a result of the photosynthetic process?",
+        "options": [
+          "Glucose",
+          "Carbon dioxide",
+          "Minerals",
+          "Light energy"
+        ],
+        "correct_answer": "Glucose",
+        "explanation": "Glucose is an energy-rich organic compound produced during photosynthesis, whereas carbon dioxide and water are inputs, not outputs."
+      }
+    ],
+    "model": "gemini-3.1-flash-lite",
+    "status": "PASSED"
+  },
+  {
+    "test_name": "REST API Architecture",
+    "difficulty": "intermediate",
+    "title": "REST Architectural Style Quiz",
+    "questions": [
+      {
+        "id": "q1",
+        "question": "What is the fundamental requirement for communication between a client and a server in a RESTful architecture?",
+        "options": [
+          "The server must maintain a persistent session state for every client.",
+          "Communication must be stateless, with each request containing all necessary processing information.",
+          "The client must store the server's internal database schema to facilitate requests.",
+          "The server must initiate all data transfers to ensure synchronization."
+        ],
+        "correct_answer": "Communication must be stateless, with each request containing all necessary processing information.",
+        "explanation": "REST requires stateless communication, meaning the server does not store client context between requests; therefore, every request must be self-contained."
+      },
+      {
+        "id": "q2",
+        "question": "How do RESTful Web services achieve a uniform interface for resource manipulation?",
+        "options": [
+          "By utilizing custom proprietary protocols for every data exchange.",
+          "By requiring the client to execute server-side code directly.",
+          "By employing standard HTTP verbs such as GET, POST, PUT, and DELETE.",
+          "By strictly using XML-based messaging for all communication."
+        ],
+        "correct_answer": "By employing standard HTTP verbs such as GET, POST, PUT, and DELETE.",
+        "explanation": "The REST architectural style uses standard HTTP verbs to provide a consistent and uniform interface for interacting with resources."
+      },
+      {
+        "id": "q3",
+        "question": "What defines a Web service as being 'RESTful'?",
+        "options": [
+          "It is built exclusively using the Java programming language.",
+          "It conforms to the constraints defined by the REST architectural style.",
+          "It uses a centralized server to track all active client connections.",
+          "It replaces HTTP with a more efficient, custom-built transport layer."
+        ],
+        "correct_answer": "It conforms to the constraints defined by the REST architectural style.",
+        "explanation": "The text explicitly defines RESTful Web services as those that conform to the constraints of the Representational State Transfer architectural style."
+      }
+    ],
+    "model": "gemini-3.1-flash-lite",
+    "status": "PASSED"
+  },
+  {
+    "test_name": "Binary Search",
+    "difficulty": "advanced",
+    "title": "Binary Search Advanced Assessment",
+    "questions": [
+      {
+        "id": "q1",
+        "question": "Why is the midpoint calculation formula 'low + (high - low) / 2' preferred over '(low + high) / 2' in binary search implementations?",
+        "options": [
+          "It reduces the time complexity from O(log n) to O(1) for midpoint calculation.",
+          "It prevents potential integer overflow that can occur when adding two large indices.",
+          "It ensures the search interval is divided into unequal parts to optimize for skewed data.",
+          "It allows the algorithm to handle unsorted arrays by dynamically adjusting the search range."
+        ],
+        "correct_answer": "It prevents potential integer overflow that can occur when adding two large indices.",
+        "explanation": "In many programming languages, adding two large integers can exceed the maximum value of the integer type, leading to overflow. The formula (low + (high - low) / 2) mathematically results in the same midpoint while keeping intermediate values smaller."
+      },
+      {
+        "id": "q2",
+        "question": "Given the time and space complexity of binary search, which statement accurately describes its performance characteristics?",
+        "options": [
+          "It requires O(n) auxiliary space due to the recursive nature of the interval division.",
+          "It achieves O(log n) time complexity but is only applicable to linked list data structures.",
+          "It maintains O(log n) time complexity and O(1) auxiliary space by iteratively narrowing the search range.",
+          "It provides O(1) time complexity by using the middle element to immediately locate the target."
+        ],
+        "correct_answer": "It maintains O(log n) time complexity and O(1) auxiliary space by iteratively narrowing the search range.",
+        "explanation": "Binary search is highly efficient because it discards half of the remaining elements in each step (O(log n)) and does not require additional data structures proportional to the input size (O(1) auxiliary space)."
+      },
+      {
+        "id": "q3",
+        "question": "What is the fundamental prerequisite for the binary search algorithm to function correctly?",
+        "options": [
+          "The input array must be sorted to allow for the logical division of the search interval.",
+          "The input array must contain only unique elements to avoid index return errors.",
+          "The input array must be of a power-of-two length to ensure perfect division of the interval.",
+          "The input array must be stored in contiguous memory to support O(1) auxiliary space."
+        ],
+        "correct_answer": "The input array must be sorted to allow for the logical division of the search interval.",
+        "explanation": "Binary search relies on the property that the array is sorted, which allows the algorithm to determine whether the target lies in the lower or upper half of the current search interval based on a single comparison."
+      }
+    ],
+    "model": "gemini-3.1-flash-lite",
+    "status": "PASSED"
+  }
+]

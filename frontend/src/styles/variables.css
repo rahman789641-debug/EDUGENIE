@@ -1,0 +1,275 @@
+/**
+ * EDUGENIE Design System Tokens
+ * Centralized CSS variables for typography, colors, spacing, borders, shadows, and focus states.
+ */
+
+:root {
+  /* Typography Scale */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-display: 'Plus Jakarta Sans', 'Outfit', var(--font-sans);
+  --font-mono: 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace;
+
+  --text-xs: 0.8125rem;   /* 13px */
+  --text-sm: 0.9375rem;   /* 15px */
+  --text-base: 1.03125rem;/* 16.5px */
+  --text-lg: 1.15625rem;  /* 18.5px */
+  --text-xl: 1.35rem;     /* 21.6px */
+  --text-2xl: 1.625rem;   /* 26px */
+  --text-3xl: 2.05rem;    /* 32.8px */
+  --text-4xl: 2.45rem;    /* 39.2px */
+
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+
+  /* Spacing Scale */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px */
+
+  /* Neutral Dark Palette (Ultra-clean, High-End AI SaaS Theme - Default) */
+  --color-bg-base: #07090e;
+  --color-bg-surface: #0c111d;
+  --color-bg-surface-hover: #131a2e;
+  --color-bg-card: #0e1526;
+  --color-bg-card-hover: #141d33;
+  --color-bg-card-elevated: #16213a;
+  --color-bg-input: #080d18;
+  --color-bg-subtle: rgba(255, 255, 255, 0.035);
+
+  /* Primary Brand - Electric Indigo & Cyber Cyan */
+  --color-primary: #6366f1;
+  --color-primary-hover: #4f46e5;
+  --color-primary-light: #818cf8;
+  --color-primary-subtle: rgba(99, 102, 241, 0.14);
+  --color-primary-glow: rgba(99, 102, 241, 0.35);
+
+  /* Secondary Accents */
+  --color-accent-cyan: #06b6d4;
+  --color-accent-cyan-light: #38bdf8;
+  --color-accent-cyan-subtle: rgba(6, 182, 212, 0.14);
+  --color-accent-purple: #a855f7;
+  --color-accent-purple-subtle: rgba(168, 85, 247, 0.14);
+
+  /* Luminous Brand Gradients */
+  --gradient-brand: linear-gradient(135deg, #6366f1 0%, #4f46e5 45%, #06b6d4 100%);
+  --gradient-brand-subtle: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(6, 182, 212, 0.12) 100%);
+  --gradient-brand-glow: linear-gradient(135deg, rgba(99, 102, 241, 0.35) 0%, rgba(6, 182, 212, 0.25) 100%);
+  --gradient-card: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.005) 100%), #0e1526;
+  --gradient-text: linear-gradient(135deg, #ffffff 40%, #cbd5e1 100%);
+  --gradient-glow-hero: radial-gradient(circle at 50% -10%, rgba(99, 102, 241, 0.18) 0%, rgba(6, 182, 212, 0.06) 45%, transparent 70%);
+
+  /* Semantic Feedback Colors */
+  --color-success: #10b981;
+  --color-success-bg: rgba(16, 185, 129, 0.12);
+  --color-success-border: rgba(16, 185, 129, 0.3);
+
+  --color-warning: #f59e0b;
+  --color-warning-bg: rgba(245, 158, 11, 0.12);
+  --color-warning-border: rgba(245, 158, 11, 0.3);
+
+  --color-danger: #ef4444;
+  --color-danger-bg: rgba(239, 68, 68, 0.12);
+  --color-danger-border: rgba(239, 68, 68, 0.3);
+
+  --color-info: #38bdf8;
+  --color-info-bg: rgba(56, 189, 248, 0.12);
+  --color-info-border: rgba(56, 189, 248, 0.3);
+
+  /* Typography Colors with Enhanced Readability */
+  --text-main: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --text-dim: #7e8fa6;
+  --text-inverse: #07090e;
+
+  /* Premium Borders & Dividers */
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-medium: rgba(255, 255, 255, 0.15);
+  --border-highlight: rgba(99, 102, 241, 0.45);
+  --border-glow: rgba(99, 102, 241, 0.35);
+
+  /* Focus Ring */
+  --focus-ring: 0 0 0 2px var(--color-bg-base), 0 0 0 4px var(--color-primary-light);
+
+  /* Border Radii */
+  --radius-xs: 5px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 22px;
+  --radius-full: 9999px;
+
+  /* Elevation Shadows with Ambient Lighting */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 10px 30px -4px rgba(0, 0, 0, 0.6), 0 4px 8px -2px rgba(0, 0, 0, 0.3);
+  --shadow-card: 0 4px 20px -2px rgba(0, 0, 0, 0.5), 0 0 0 1px var(--border-subtle);
+  --shadow-card-hover: 0 14px 35px -5px rgba(0, 0, 0, 0.7), 0 0 0 1px var(--border-highlight), 0 0 25px -4px rgba(99, 102, 241, 0.3);
+  --shadow-btn: 0 4px 14px 0 rgba(79, 70, 229, 0.35);
+  --shadow-btn-hover: 0 6px 20px 0 rgba(79, 70, 229, 0.55);
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 220ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 320ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Layout Dimensions */
+  --sidebar-width: 260px;
+  --sidebar-collapsed-width: 72px;
+  --header-height: 64px;
+}
+
+/* ==============================================================================
+ * LIGHT THEME PALETTE
+ * Ultra-clean, high-contrast, professional modern SaaS styling
+ * ============================================================================== */
+:root[data-theme="light"],
+[data-theme="light"] {
+  /* Neutral Light Canvas & Surfaces */
+  --color-bg-base: #f8fafc;        /* Crisp modern slate-50 background */
+  --color-bg-surface: #ffffff;     /* Pure white card/section surface */
+  --color-bg-surface-hover: #f1f5f9; /* Soft slate-100 hover */
+  --color-bg-card: #ffffff;        /* Pure white cards */
+  --color-bg-card-hover: #f8fafc;  /* Card hover state */
+  --color-bg-card-elevated: #ffffff;
+  --color-bg-input: #ffffff;       /* Pure white input backgrounds */
+  --color-bg-subtle: #f1f5f9;      /* Slate-100 subtle pill/status backgrounds */
+
+  /* Primary Brand - Vibrant Indigo */
+  --color-primary: #4f46e5;        /* High-contrast Indigo-600 */
+  --color-primary-hover: #4338ca;  /* Indigo-700 */
+  --color-primary-light: #6366f1;  /* Indigo-500 */
+  --color-primary-subtle: rgba(79, 70, 229, 0.08);
+  --color-primary-glow: rgba(79, 70, 229, 0.25);
+
+  /* Secondary Accents - Deep Sky Cyan & Purple */
+  --color-accent-cyan: #0284c7;    /* Sky-600 */
+  --color-accent-cyan-light: #0369a1; /* Sky-700 */
+  --color-accent-cyan-subtle: rgba(2, 132, 199, 0.08);
+  --color-accent-purple: #7e22ce;  /* Purple-700 */
+  --color-accent-purple-subtle: rgba(126, 34, 206, 0.08);
+
+  /* Luminous Brand Gradients */
+  --gradient-brand: linear-gradient(135deg, #4f46e5 0%, #4338ca 50%, #0284c7 100%);
+  --gradient-brand-subtle: linear-gradient(135deg, rgba(79, 70, 229, 0.07) 0%, rgba(2, 132, 199, 0.05) 100%);
+  --gradient-brand-glow: linear-gradient(135deg, rgba(79, 70, 229, 0.16) 0%, rgba(2, 132, 199, 0.1) 100%);
+  --gradient-card: #ffffff;
+  --gradient-text: linear-gradient(135deg, #0f172a 30%, #334155 100%);
+  --gradient-glow-hero: radial-gradient(circle at 50% -10%, rgba(79, 70, 229, 0.06) 0%, rgba(2, 132, 199, 0.03) 45%, transparent 70%);
+
+  /* Semantic Feedback Colors - Clean High Contrast */
+  --color-success: #059669;        /* Emerald-600 */
+  --color-success-bg: rgba(5, 150, 105, 0.08);
+  --color-success-border: rgba(5, 150, 105, 0.25);
+
+  --color-warning: #d97706;        /* Amber-600 */
+  --color-warning-bg: rgba(217, 119, 6, 0.08);
+  --color-warning-border: rgba(217, 119, 6, 0.25);
+
+  --color-danger: #dc2626;         /* Red-600 */
+  --color-danger-bg: rgba(220, 38, 38, 0.08);
+  --color-danger-border: rgba(220, 38, 38, 0.25);
+
+  --color-info: #0284c7;           /* Sky-600 */
+  --color-info-bg: rgba(2, 132, 199, 0.08);
+  --color-info-border: rgba(2, 132, 199, 0.25);
+
+  /* Typography Colors - High Visibility, Pitch Contrast & Maximum Readability */
+  --text-main: #0f172a;            /* Slate-900: Crisp ultra-dark readable headings/text */
+  --text-secondary: #1e293b;       /* Slate-800: Strong readability */
+  --text-muted: #334155;           /* Slate-700: High-contrast body text */
+  --text-dim: #475569;             /* Slate-600: Crystal clear metadata & labels */
+  --text-inverse: #ffffff;
+
+  /* Premium Light Borders & Dividers */
+  --border-subtle: #e2e8f0;        /* Slate-200 */
+  --border-medium: #cbd5e1;        /* Slate-300 */
+  --border-highlight: rgba(79, 70, 229, 0.35);
+  --border-glow: rgba(79, 70, 229, 0.2);
+
+  /* Focus Ring */
+  --focus-ring: 0 0 0 2px #ffffff, 0 0 0 4px var(--color-primary-light);
+
+  /* Light Elevation Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 25px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.03);
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.04), 0 0 0 1px #e2e8f0;
+  --shadow-card-hover: 0 10px 25px -4px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(79, 70, 229, 0.25);
+  --shadow-btn: 0 2px 6px rgba(79, 70, 229, 0.2);
+  --shadow-btn-hover: 0 4px 12px rgba(79, 70, 229, 0.3);
+}
+
+/* ==============================================================================
+ * STRICT ASK AI SECTION PROTECTION:
+ * Keep the Ask AI module in its exact, original dark mode aesthetic.
+ * ============================================================================== */
+.preserve-dark-theme,
+[data-theme="light"] .preserve-dark-theme {
+  --color-bg-base: #07090e !important;
+  --color-bg-surface: #0c111d !important;
+  --color-bg-surface-hover: #131a2e !important;
+  --color-bg-card: #0e1526 !important;
+  --color-bg-card-hover: #141d33 !important;
+  --color-bg-card-elevated: #16213a !important;
+  --color-bg-input: #080d18 !important;
+  --color-bg-subtle: rgba(255, 255, 255, 0.035) !important;
+  --text-main: #f8fafc !important;
+  --text-secondary: #cbd5e1 !important;
+  --text-muted: #94a3b8 !important;
+  --text-dim: #7e8fa6 !important;
+  --text-inverse: #07090e !important;
+  --border-subtle: rgba(255, 255, 255, 0.08) !important;
+  --border-medium: rgba(255, 255, 255, 0.15) !important;
+  --border-highlight: rgba(99, 102, 241, 0.45) !important;
+  --border-glow: rgba(99, 102, 241, 0.35) !important;
+  --color-primary: #6366f1 !important;
+  --color-primary-hover: #4f46e5 !important;
+  --color-primary-light: #818cf8 !important;
+  --color-primary-subtle: rgba(99, 102, 241, 0.14) !important;
+  --color-primary-glow: rgba(99, 102, 241, 0.35) !important;
+  --color-accent-cyan: #06b6d4 !important;
+  --color-accent-cyan-light: #38bdf8 !important;
+  --gradient-text: linear-gradient(135deg, #ffffff 40%, #cbd5e1 100%) !important;
+  background-color: #000000 !important;
+  color: #f8fafc !important;
+}
+
+/* Logo display switching based on theme */
+.app-logo-dark {
+  display: block;
+}
+.app-logo-light {
+  display: none;
+}
+[data-theme="light"] .app-logo-dark {
+  display: none !important;
+}
+[data-theme="light"] .app-logo-light {
+  display: block !important;
+}
+/* If inside preserved dark theme, force dark logo */
+[data-theme="light"] .preserve-dark-theme .app-logo-dark {
+  display: block !important;
+}
+[data-theme="light"] .preserve-dark-theme .app-logo-light {
+  display: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition-fast: 0ms;
+    --transition-normal: 0ms;
+    --transition-smooth: 0ms;
+  }
+}

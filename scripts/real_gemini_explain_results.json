@@ -1,0 +1,47 @@
+[
+  {
+    "topic": "Recursion",
+    "level": "beginner",
+    "title": "Understanding Recursion: The Power of Self-Calling Functions",
+    "key_points": [
+      "Recursion occurs when a function calls itself to break a large problem into smaller, manageable pieces.",
+      "A 'Base Case' is mandatory; it acts as an exit strategy to prevent the function from running forever.",
+      "Each recursive call creates a new 'layer' of work, which is resolved once the base case is reached.",
+      "Recursion is often an elegant alternative to loops for tasks like navigating trees or sorting data."
+    ],
+    "explanation_preview": "Recursion is a programming technique where a function solves a complex problem by calling itself to solve smaller, simpler versions of that same problem. Think of it like a set of Russian Matryoshka dolls: to open the largest doll, you must open the one inside it, and then the one inside that, until",
+    "example_preview": "Imagine you want to count down from 3 to 1. Here is how recursion handles it:\n\nfunction countDown(number) {\n  // 1. Base Case: If number is 0, we stop.\n  if (number === 0) {\n    return;\n  }\n  \n  // 2.",
+    "model": "gemini-3.1-flash-lite",
+    "status": "PASSED"
+  },
+  {
+    "topic": "REST API",
+    "level": "intermediate",
+    "title": "Mastering REST APIs: Architectural Patterns and Practical Implementation",
+    "key_points": [
+      "Resource-Oriented Architecture: Map your data model to URIs (e.g., /users/123/orders) rather than functional endpoints like /getUserOrders.",
+      "Statelessness and Scalability: By offloading state management to the client, servers become horizontally scalable, as any server instance can handle any request without prior context.",
+      "HATEOAS (Hypermedia as the Engine of Application State): Advanced REST APIs include links in their responses to guide the client on available next steps, promoting loose coupling.",
+      "Idempotency: Ensure that repeated identical requests (like PUT or DELETE) result in the same server state as a single request, which is critical for network reliability."
+    ],
+    "explanation_preview": "Representational State Transfer (REST) is an architectural style for distributed hypermedia systems. At the intermediate level, it is best understood as a set of constraints that govern how resources are identified, accessed, and manipulated over HTTP. Unlike RPC-style architectures, REST focuses on",
+    "example_preview": "Scenario: Managing a Library System.\n\n1. GET /books: Retrieve a list of books. (Returns 200 OK)\n2. POST /books: Create a new book entry. (Expects JSON body, returns 201 Created)\n3. GET /books/978-0132",
+    "model": "gemini-3.1-flash-lite",
+    "status": "PASSED"
+  },
+  {
+    "topic": "Binary Search",
+    "level": "advanced",
+    "title": "Binary Search: Theoretical Foundations and Production-Grade Implementation",
+    "key_points": [
+      "Integer Overflow: Calculating the midpoint as (low + high) / 2 can lead to integer overflow in languages with fixed-width integers; the robust alternative is low + (high - low) / 2.",
+      "Cache Locality vs. Dynamic Updates: Binary search provides excellent read performance and cache locality for static arrays but suffers from O(n) overhead for structural modifications.",
+      "Boundary Conditions: Off-by-one errors are the primary source of bugs; developers must strictly define whether the search space is [low, high] (inclusive) or [low, high) (half-open) and maintain the loop invariant consistently.",
+      "Branch Prediction: In tight loops, the conditional branching of binary search can lead to pipeline stalls on modern CPUs, though this is rarely the bottleneck compared to memory access latency."
+    ],
+    "explanation_preview": "Binary search is a logarithmic search algorithm that operates on sorted data structures by repeatedly halving the search space. At its core, it leverages the invariant that if a target value exists in a sorted array, it must reside within a specific sub-interval. The algorithm achieves O(log n) time",
+    "example_preview": "/**\n * Robust Binary Search implementation in C++ \n * Handles potential overflow and uses half-open intervals [low, high).\n */\nint binarySearch(const std::vector<int>& arr, int target) {\n    int low =",
+    "model": "gemini-3.1-flash-lite",
+    "status": "PASSED"
+  }
+]

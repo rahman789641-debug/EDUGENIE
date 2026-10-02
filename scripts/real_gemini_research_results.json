@@ -1,0 +1,119 @@
+[
+  {
+    "query": "What is FastAPI and how is it used?",
+    "answer": "Hello! I am EduGenie, your educational AI assistant. I would be happy to help you understand what FastAPI is and how it is used.\n\n### What is FastAPI?\nBased on the provided research, **FastAPI** is a modern, high-performance web framework for Python (specifically versions 3.8 and later). It is designed to help developers build APIs and backend applications quickly and efficiently [1, 3, 4].\n\nYou can think of FastAPI as a tool that \"stands on the shoulders of giants\" because it is built upon two core technologies [2]:\n*   **Starlette:** Handles the web-related functionality (like routing and request handling).\n*   **Pydantic:** Handles data validation, serialization, and deserialization using Python type hints [1, 4].\n\n### Key Features\nAccording to the retrieved sources, FastAPI is popular for several reasons:\n*   **High Performance:** It is designed to be fast and efficient [1, 3].\n*   **Automatic Documentation:** It provides built-in, interactive API documentation using tools like Swagger UI and ReDoc, which makes testing your API much easier [3].\n*   **Data Validation:** Because it uses Pydantic and type hints, it automatically checks that the data sent to your API is in the correct format [3, 4].\n*   **Async Support:** It supports asynchronous programming, which allows the application to handle multiple tasks concurrently [3].\n\n### How is FastAPI Used?\nFastAPI is primarily used for building backend systems. Common use cases include:\n*   **REST APIs:** Creating interfaces for web and mobile applications to communicate with a server [1].\n*   **Microservices:** Building small, independent services that work together to form a larger application [1].\n*   **Backend Systems:** Serving as the logic layer for various web and mobile platforms [1].\n\n**A Note on CLI Tools:**\nWhile FastAPI is designed for web APIs, the creators also developed a related tool called **Typer**. If you are looking to build Command Line Interface (CLI) applications rather than web APIs, Typer is often referred to as the \"little sibling\" of FastAPI [2].\n\n***\n\n*Disclaimer: The information above is synthesized from the provided research materials. While these sources confirm that FastAPI is a leading choice for Python API development, general knowledge suggests that its ease of use and speed are the primary reasons developers choose it over older frameworks like Flask or Django for specific API-focused projects.*",
+    "sources": [
+      {
+        "title": "Introduction to FastAPI - GeeksforGeeks",
+        "url": "https://www.geeksforgeeks.org/python/introduction-to-fastapi/",
+        "domain": "www.geeksforgeeks.org",
+        "snippet": "FastAPI is a modern Python web framework used to build APIs and backend applications quickly and efficiently. Built on top of Starlette and Pydantic, providing high performance and reliable data handling. Widely used for developing REST APIs, microservices and backend systems for web and mobile applications."
+      },
+      {
+        "title": "FastAPI - FastAPI",
+        "url": "https://fastapi.tiangolo.com/",
+        "domain": "fastapi.tiangolo.com",
+        "snippet": "FastAPI mini documentary There's a FastAPI mini documentary released at the end of 2025, you can watch it online: Typer, the FastAPI of CLIs If you are building a CLI app to be used in the terminal instead of a web API, check out Typer. Typer is FastAPI's little sibling. And it's intended to be the FastAPI of CLIs. ⌨️ 🚀 Requirements FastAPI stands on the shoulders of giants: Starlette ..."
+      },
+      {
+        "title": "FastAPI Tutorial - GeeksforGeeks",
+        "url": "https://www.geeksforgeeks.org/python/fastapi-tutorial/",
+        "domain": "www.geeksforgeeks.org",
+        "snippet": "FastAPI is a modern, high performance Python web framework for building APIs quickly and efficiently. It offers automatic data validation, type checking, async support and built-in interactive API docs using Swagger UI and ReDoc."
+      },
+      {
+        "title": "FastAPI - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/FastAPI",
+        "domain": "en.wikipedia.org",
+        "snippet": "FastAPI is a web framework for building HTTP -based service APIs in Python 3.8+. [3] It uses Pydantic and type hints to validate, serialize and deserialize data."
+      },
+      {
+        "title": "Get Started With FastAPI - Real Python",
+        "url": "https://realpython.com/get-started-with-fastapi/",
+        "domain": "realpython.com",
+        "snippet": "FastAPI is the first choice when creating APIs in Python. Explore FastAPI code examples and get the most frequent questions about FastAPI answered."
+      }
+    ],
+    "request_id": "res-69fc8ab34e92",
+    "model": "gemini-3.1-flash-lite",
+    "status": "ok"
+  },
+  {
+    "query": "What are the latest official developments in Python?",
+    "answer": "Hello! I am EduGenie, your educational AI assistant. Based on the latest information from official Python sources, here is an update on the current developments in the Python programming language.\n\n### Latest Official Developments: Python 3.14\nThe most recent major development is the release of **Python 3.14.7**. This version introduces several key updates aimed at improving how developers interact with and manage their code.\n\n#### Key Features and Changes:\n*   **Process Inspection:** A new command-line interface has been introduced that allows you to inspect running Python processes using asynchronous tasks.\n*   **Remote Debugging:** The `pdb` (Python Debugger) module now supports remote attaching to a running Python process, which can be very helpful for troubleshooting applications in production environments.\n*   **Security Updates (PEP 761):** A significant change in the build process is that, starting with Python 3.14, the Python Software Foundation no longer provides PGP signatures for release artifacts.\n\n### How to Stay Updated\nIf you are interested in tracking the evolution of the language, here are the best ways to stay informed:\n\n1.  **Official Documentation:** The [What's New in Python](https://docs.python.org/3/whatsnew/index.html) series of essays is the primary resource for understanding the most important changes between major versions. It is highly recommended for anyone who wants to keep their skills current.\n2.  **Official Downloads:** You can always find the latest stable version and release notes directly at [Python.org](https://www.python.org/downloads/latest/).\n3.  **Community Resources:** Websites like *Real Python* provide curated news and tutorials that help explain how these core language changes impact the broader third-party ecosystem.\n\n***\n\n**Note on Scope:** The information above is based on the specific research material provided regarding Python 3.14.7. While these sources cover the latest official release features and build changes, they do not provide an exhaustive list of every minor bug fix or security patch. For a comprehensive list of every change, I recommend reviewing the full changelog provided in the official Python documentation.",
+    "sources": [
+      {
+        "title": "Python Release Python 3.14.7 | Python.org",
+        "url": "https://www.python.org/downloads/latest/",
+        "domain": "www.python.org",
+        "snippet": "A new command-line interface to inspect running Python processes using asynchronous tasks. The pdb module now supports remote attaching to a running Python process. For more details on the changes to Python 3.14, see What's new in Python 3.14. Build changes PEP 761: Python 3.14 and onwards no longer provides PGP signatures for release artifacts."
+      },
+      {
+        "title": "Welcome to Python.org",
+        "url": "https://www.python.org/",
+        "domain": "www.python.org",
+        "snippet": "The official home of the Python Programming Language"
+      },
+      {
+        "title": "Python News - Real Python",
+        "url": "https://realpython.com/tutorials/news/",
+        "domain": "realpython.com",
+        "snippet": "Follow the latest developments for core Python and its broader third-party ecosystem. Important Python news for you, curated by the Real Python team."
+      },
+      {
+        "title": "What's New in Python — Python 3.14.7 documentation",
+        "url": "https://docs.python.org/3/whatsnew/index.html",
+        "domain": "docs.python.org",
+        "snippet": "What's New in Python ¶ The \"What's New in Python\" series of essays takes tours through the most important changes between major Python versions. They are a \"must read\" for anyone wishing to stay up-to-date after a new release."
+      },
+      {
+        "title": "Latest Python Releases, Changelog & Updates - ReleaseBytes",
+        "url": "https://releasebytes.com/python",
+        "domain": "releasebytes.com",
+        "snippet": "The latest Python release notes, changelogs and updates, summarised in plain English - new features, breaking changes, security advisories and deprecations, updated continuously."
+      }
+    ],
+    "request_id": "res-eb0d7702ffcc",
+    "model": "gemini-3.1-flash-lite",
+    "status": "ok"
+  },
+  {
+    "query": "Explain React Server Components in simple terms.",
+    "answer": "Hello! I am EduGenie, your educational AI assistant. Let’s break down **React Server Components (RSC)** into simple terms based on the research provided.\n\n### What are React Server Components?\nIn traditional React, components are typically rendered on the user's browser (the \"client\"). React Server Components are a new type of component that renders **ahead of time** in a separate environment—the server—before the code is even sent to the browser [2].\n\n### Key Characteristics\nBased on the provided research, here are the core concepts to understand:\n\n*   **No JavaScript sent to the browser:** A major benefit of Server Components is that they run exclusively on the server. Because they are rendered there, they do not ship their JavaScript code to the user's browser [4]. This can help keep your application lightweight.\n*   **Flexible Timing:** These components can run once at \"build time\" (when you prepare your app for deployment) or for every individual request made to your web server [2].\n*   **Familiar Syntax:** If you already know how to write standard React components, you already know how to write Server Components. The code looks exactly the same [1].\n\n### How to distinguish them from Client Components\nSince Server Components are the default in modern React frameworks, you need a way to tell React when a component *must* run in the browser (for example, if it needs to handle clicks or use browser-only features like `useState`).\n\n*   **The `'use client'` directive:** To use a component on the client side, you simply add the string `'use client'` at the very top of your file [1]. This acts as a signal to React that the following code should be rendered on the client side rather than the server [1].\n\n### Summary Table\n| Feature | Server Components | Client Components |\n| :--- | :--- | :--- |\n| **Where it runs** | The Server [2] | The Browser [1] |\n| **JavaScript size** | Does not ship JS to browser [4] | Ships JS to browser |\n| **How to identify** | Default (no special tag) | Requires `'use client'` [1] |\n\n***\n\n**Note on Scope:**\nThe provided sources explain the \"what\" and \"how\" of Server Components effectively. While the sources mention that these components are part of modern React (including React 19) [4, 5], they do not provide a deep technical tutorial on complex data-fetching patterns or specific state-management limitations. The information above is based on the provided research, supplemented by general knowledge of how React components function within the ecosystem.",
+    "sources": [
+      {
+        "title": "ReactJS Server Components - GeeksforGeeks",
+        "url": "https://www.geeksforgeeks.org/reactjs/reactjs-server-components/",
+        "domain": "www.geeksforgeeks.org",
+        "snippet": "Coding in React Server Components: The code in React Server Components will look exactly same like normal old React code but if we are using client components code with sever components code we have to give a add a heading of 'use client' this will inform react that the following is a client component and has to be rendered on client side."
+      },
+      {
+        "title": "Server Components - React",
+        "url": "https://react.dev/reference/rsc/server-components",
+        "domain": "react.dev",
+        "snippet": "Server Components are a new type of Component that renders ahead of time, before bundling, in an environment separate from your client app or SSR server. This separate environment is the \"server\" in React Server Components. Server Components can run once at build time on your CI server, or they can be run for each request using a web server."
+      },
+      {
+        "title": "What Are React Server Components? - Python Guides",
+        "url": "https://pythonguides.com/react-server-components/",
+        "domain": "pythonguides.com",
+        "snippet": "If you're curious about what React Server Components are, how they differ from traditional client components, and how to use them effectively, you're in the right place. In this article, I'll break down React Server Components in simple terms, share practical examples, and explain when and why to use them in your projects."
+      },
+      {
+        "title": "React Server Components Deep Dive - DEV Community",
+        "url": "https://dev.to/a1guy/react-19-server-components-deep-dive-what-they-are-how-they-work-and-when-to-use-them-2h2e",
+        "domain": "dev.to",
+        "snippet": "A Server Component is a React component that runs only on the server and never ships JavaScript to the browser. When React finishes rendering it on the server, the result is basically:"
+      },
+      {
+        "title": "React Server Components Explained: The Complete Guide",
+        "url": "https://www.brilworks.com/blog/react-server-components-complete-guide/",
+        "domain": "www.brilworks.com",
+        "snippet": "A 2026 guide to React Server Components, how they work, server-first patterns, and what's new in React 19."
+      }
+    ],
+    "request_id": "res-ec29c6030c26",
+    "model": "gemini-3.1-flash-lite",
+    "status": "ok"
+  }
+]

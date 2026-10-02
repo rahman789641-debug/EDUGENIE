@@ -1,0 +1,34 @@
+{
+  "qa": {
+    "status": "ok",
+    "mode": "ai",
+    "chars": 2111
+  },
+  "explain": {
+    "status": "ok",
+    "title": "Understanding Recursion: The Power of Self-Calling Functions",
+    "key_points_count": 4
+  },
+  "quiz": {
+    "status": "ok",
+    "total_questions": 3
+  },
+  "summary": {
+    "status": "ok",
+    "summary_chars": 355,
+    "key_points_count": 4
+  },
+  "learning_path": {
+    "status": "ok",
+    "stages": 4
+  },
+  "research": {
+    "status": "ok",
+    "sources_count": 5,
+    "answer_chars": 2086
+  },
+  "prompt_injection_defense": {
+    "status": "ok",
+    "neutralized": true
+  }
+}

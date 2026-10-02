@@ -1,0 +1,62 @@
+[
+  {
+    "case": "Case A",
+    "question": "What is React?",
+    "mode": "ai",
+    "answer": "React is an open-source JavaScript library used for building user interfaces (UI), primarily for single-page applications. It is maintained by Meta (formerly Facebook) and a community of individual de...",
+    "sources_count": 0,
+    "model": "gemini-3.1-flash-lite"
+  },
+  {
+    "case": "Case B",
+    "question": "What are the latest official React developments?",
+    "mode": "research",
+    "answer": "Hello! I am EduGenie, your educational AI assistant. Based on the latest research materials, here is an overview of the recent developments in React as of September 2026.\n\n### Latest Official Developm...",
+    "sources": [
+      {
+        "title": "React",
+        "url": "https://react.dev/",
+        "domain": "react.dev",
+        "snippet": "This is why React is more than a library, an architecture, or even an ecosystem. React is a community. It's a place where you can ask for help, find opportunities, and meet new friends. You will meet both developers and designers, beginners and experts, researchers and artists, teachers and students. Our backgrounds may be very different, but React lets us all create user interfaces together."
+      },
+      {
+        "title": "React 19.3 - React",
+        "url": "https://react.dev/blog/2026/09/09/react-19-3",
+        "domain": "react.dev",
+        "snippet": "New React Features View Transitions The new <ViewTransition> component lets you animate elements as they enter, exit, move, or resize using the browser's View Transition API. We shared it as an experimental API last year, and in 19.3 it's stable and ready to use. To animate part of your UI, wrap it in <ViewTransition>:"
+      },
+      {
+        "title": "React 19 : New Features and Updates - GeeksforGeeks",
+        "url": "https://www.geeksforgeeks.org/reactjs/react-19-new-features-and-updates/",
+        "domain": "www.geeksforgeeks.org",
+        "snippet": "React 19 introduces powerful improvements focused on better performance, server integration, and developer experience. It builds on concurrent features and simplifies how developers handle forms, data fetching, and UI updates. Actions & Form Improvements: Built-in support for async form actions, making server interactions smoother and reducing boilerplate code. React Compiler (Experimental ..."
+      },
+      {
+        "title": "React 19: What's New for Developers [2026] - scrimba.com",
+        "url": "https://scrimba.com/articles/react-19-whats-new-for-developers/",
+        "domain": "scrimba.com",
+        "snippet": "React 19: What's New for Developers [2026] Every React 19 feature explained with code, verified against react.dev: Actions, the use hook, ref as a prop, the React Compiler, and what breaks."
+      },
+      {
+        "title": "React Updates by Meta - September 2026 - Releasebot",
+        "url": "https://releasebot.io/updates/meta/react",
+        "domain": "releasebot.io",
+        "snippet": "Browse a full list of updates made to React by Meta. Follow to get all release notes by email, RSS, and more."
+      }
+    ],
+    "model": "gemini-3.1-flash-lite"
+  },
+  {
+    "case": "Case C",
+    "question": "What is FastAPI?",
+    "c1_ai_answer": "FastAPI is a modern, high-performance web framework for building APIs with Python 3.8+ based on standard Python type hints.\n\n### Explanation\nFastAPI i...",
+    "c2_research_answer": "Hello! I am EduGenie, your educational AI assistant. I would be happy to help you understand what FastAPI is.\n\n### What is FastAPI?\nBased on the provi...",
+    "c2_sources_count": 5
+  },
+  {
+    "case": "Case D",
+    "question": "How is it different from Flask?",
+    "context": "Student: What is FastAPI?\nEduGenie: FastAPI is a modern, high-performance web framework for building APIs with Python 3.8+ based on standard Python type hints.\n\n### Explanation\nFastAPI is designed to be fast to code, fast to run, and easy to learn. It is built on top of two key technologies:\n*   **Starlette:** Handles the web parts (r",
+    "answer": "FastAPI and Flask are both popular Python web frameworks, but they differ significantly in their architecture and feature sets.\n\n### Key Differences\n\n1.  **Asynchronous Support:**\n    *   **FastAPI:**..."
+  }
+]
