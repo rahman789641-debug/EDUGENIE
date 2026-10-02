@@ -1,5 +1,15 @@
 # EDUGENIE
 > **Google Gemini Powered Personalized Learning Assistant**
+> *Project Submission for Naan Mudhalvan Skill Development Program*
+
+[![Tests](https://img.shields.io/badge/Tests-229%20Passed-brightgreen)](https://github.com/rahman789641-debug/EDUGENIE)
+[![React](https://img.shields.io/badge/Frontend-React%2019%20%2B%20Vite-blue)](https://github.com/rahman789641-debug/EDUGENIE)
+[![Backend](https://img.shields.io/badge/Backend-FastAPI%20%2B%20Python%203.11-teal)](https://github.com/rahman789641-debug/EDUGENIE)
+[![AI](https://img.shields.io/badge/AI%20Engine-Google%20Gemini%203.1-orange)](https://github.com/rahman789641-debug/EDUGENIE)
+[![License](https://img.shields.io/badge/License-MIT-purple)](https://github.com/rahman789641-debug/EDUGENIE)
+
+* **GitHub Repository**: [https://github.com/rahman789641-debug/EDUGENIE](https://github.com/rahman789641-debug/EDUGENIE)
+* **Live Demo**: [https://rahman789641-debug.github.io/EDUGENIE/](https://rahman789641-debug.github.io/EDUGENIE/)
 
 EDUGENIE is a production-grade, full-stack AI educational assistant engineered with React 19, FastAPI, Google Gemini 2.5/3.1, Firebase Authentication, DuckDuckGo/Tavily Web Research, and persistent SQLite learning analytics.
 
@@ -62,7 +72,7 @@ Clone the repository and install dependencies:
 
 ```bash
 # 1. Clone repository
-git clone <repository-url>
+git clone https://github.com/rahman789641-debug/EDUGENIE.git
 cd EDUGENIE
 
 # 2. Install root and frontend dependencies
