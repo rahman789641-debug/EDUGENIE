@@ -113,6 +113,14 @@ class Settings(BaseSettings):
             raise ValueError("GEMINI_MODEL environment variable is missing or empty. Please set GEMINI_MODEL in your environment.")
         return v.strip()
 
+    @field_validator("DATABASE_PATH", mode="before")
+    @classmethod
+    def assemble_database_path(cls, v: Union[str, None]) -> str:
+        import os
+        if os.environ.get("VERCEL"):
+            return "/tmp/edugenie.db"
+        return str(v) if v else str(BACKEND_DIR / "data" / "edugenie.db")
+
     @field_validator("CORS_ORIGINS", mode="before")
     @classmethod
     def assemble_cors_origins(cls, v: Union[str, List[str]]) -> List[str]:
