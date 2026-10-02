@@ -5,6 +5,7 @@
  */
 
 import type { ApiErrorResponse } from '../types/api'
+import { handleBrowserAiFallback } from '../lib/browserAiEngine.ts'
 
 export class ApiError extends Error {
   public status: number
@@ -91,6 +92,15 @@ async function request<T>(
     }
 
     if (!response.ok) {
+      if (response.status === 404 && (!BASE_URL || (typeof window !== 'undefined' && window.location.hostname.includes('github.io')))) {
+        try {
+          const bodyPayload = options.body ? JSON.parse(options.body as string) : undefined
+          return await handleBrowserAiFallback<T>(endpoint, bodyPayload)
+        } catch {
+          // If fallback fails, continue to normal error handling
+        }
+      }
+
       let errorMessage = `HTTP Error ${response.status}: ${response.statusText}`
       let errorCode = `HTTP_${response.status}`
       let errorDetails: unknown = null
@@ -128,6 +138,14 @@ async function request<T>(
 
     return (await response.json()) as T
   } catch (err: unknown) {
+    if (!BASE_URL || (typeof window !== 'undefined' && window.location.hostname.includes('github.io'))) {
+      try {
+        const bodyPayload = options.body ? JSON.parse(options.body as string) : undefined
+        return await handleBrowserAiFallback<T>(endpoint, bodyPayload)
+      } catch {
+        // continue
+      }
+    }
     if (err instanceof ApiError) {
       throw err
     }
